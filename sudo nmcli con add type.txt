@@ -1,0 +1,12 @@
+
+
+sudo nmcli con add type ethernet con-name static2 ifname enp2s0f0 ip4 10.0.2.2/24 gw4 10.0.2.2
+
+sudo nmcli con up static2
+
+sudo nmcli con add connection.interface-name enp2s0f0.2 type ethernet ip4 10.0.2.2/24 gw4 10.0.2.2
+
+
+		
+nmcli con add connection.interface-name enp1s0 type ethernet
+	
